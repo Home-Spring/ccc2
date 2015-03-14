@@ -27,7 +27,8 @@ public class MyServlet extends HttpServlet {
 
 //        PrintWriter html_out = response.getWriter();
 //        html_out.println("Hello2!");
-        RequestDispatcher dispatcher = request.getRequestDispatcher("aaa.jsp");
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
     }
 }
